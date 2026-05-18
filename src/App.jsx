@@ -339,7 +339,7 @@ function App() {
             <p className="mb-3 text-sm font-bold uppercase text-brand-accent">
               {roadmap.commitment}
             </p>
-            <img src={logo} alt="Cloud Architect Pivot Logo" className="mb-4 h-16 w-auto object-contain sm:h-20" />
+            <img src={logo} alt="My Cloud Sprint Logo" className="mb-4 h-28 w-auto object-contain sm:h-36" />
             <p className="mt-4 max-w-2xl text-lg font-medium text-brand-bg opacity-90">
               {roadmap.subtitle}
             </p>

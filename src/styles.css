@@ -27,6 +27,12 @@
     border: 1px solid rgba(226, 232, 240, 0.86);
   }
 
+  .dark .glass {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(51, 65, 85, 0.4);
+  }
+
   .button-primary,
   .button-secondary,
   .button-danger,
@@ -35,50 +41,50 @@
   }
 
   .button-primary {
-    @apply bg-slate-950 text-white hover:bg-indigo-900;
+    @apply bg-slate-950 text-white hover:bg-indigo-900 dark:bg-indigo-600 dark:text-white dark:hover:bg-indigo-500;
   }
 
   .button-secondary {
-    @apply border border-slate-300 bg-white text-slate-800 hover:bg-slate-100;
+    @apply border border-slate-300 bg-white text-slate-800 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-800;
   }
 
   .button-danger {
-    @apply bg-red-700 text-white hover:bg-red-800;
+    @apply bg-red-700 text-white hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-500;
   }
 
   .tab-button {
-    @apply border border-slate-200 bg-white text-slate-600 hover:bg-slate-50;
+    @apply border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-200;
   }
 
   .tab-button-active {
-    @apply border-slate-950 bg-slate-950 text-white hover:bg-slate-900;
+    @apply border-slate-950 bg-slate-950 text-white hover:bg-slate-900 dark:border-indigo-500 dark:bg-indigo-600 dark:text-white dark:hover:bg-indigo-500;
   }
 
   .form-label {
-    @apply mb-2 block text-sm font-bold text-slate-700;
+    @apply mb-2 block text-sm font-bold text-slate-700 dark:text-slate-300;
   }
 
   .form-field {
-    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition-colors focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100;
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition-colors focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-indigo-400 dark:focus:ring-indigo-950;
   }
 
   .day-box {
-    @apply border-l-4 border-slate-200 bg-white py-4 pl-4 pr-3 transition-colors;
+    @apply border-l-4 border-slate-200 bg-white py-4 pl-4 pr-3 transition-colors dark:border-slate-800 dark:bg-slate-900;
   }
 
   .day-box:hover {
-    @apply border-indigo-400 bg-slate-50;
+    @apply border-indigo-400 bg-slate-50 dark:border-indigo-500 dark:bg-slate-800/40;
   }
 
   .day-box-complete {
-    @apply border-emerald-500;
+    @apply border-emerald-500 dark:border-emerald-500;
   }
 
   .task-row {
-    @apply flex cursor-pointer items-start gap-3 rounded-md border p-3 transition-colors hover:border-slate-300 hover:bg-slate-50;
+    @apply flex cursor-pointer items-start gap-3 rounded-md border p-3 transition-colors hover:border-slate-300 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700 dark:hover:bg-slate-800/30;
   }
 
   .task-check {
-    @apply mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors;
+    @apply mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors dark:border-slate-700;
   }
 }

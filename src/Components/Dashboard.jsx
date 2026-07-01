@@ -578,7 +578,7 @@ function Dashboard({
                         {link.type}
                       </span>
                       <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">
-                        {link.source.replace('Day ', 'Day ')}
+                        {link.source}
                       </span>
                     </div>
                     <p className="mt-3 font-bold text-xs sm:text-sm text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 line-clamp-2 leading-snug">

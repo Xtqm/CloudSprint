@@ -6,13 +6,15 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          firebase: [
-            'firebase/app',
-            'firebase/auth',
-            'firebase/firestore',
-          ],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'react';
+            }
+            if (id.includes('firebase')) {
+              return 'firebase';
+            }
+          }
         },
       },
     },
